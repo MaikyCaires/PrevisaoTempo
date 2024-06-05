@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Previsão do tempo</title>
+</head>
+<body>
+    <div class="container-main">
+        <form  class="formulario">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" name="cidade" id="cidade" placeholder="Buscar cidade">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="dados-tempo">
+            <h1>Cidade, pais</h1>
+            <div class="tempo">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                <div class="tempo-dadosAPI">
+                    <p class="temperatura-total">22 <sup>C°</sup></p>
+                    <p class="descricao-temperatura">Nublado</p>
+                </div>
+            </div>
+                <div class="container-estatisticas">
+                    <div class="temperatura max">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                        <div>
+                            <p>Tem.max</p>
+                            <p>22 <sup>C°</sup></p>
+                        </div>
+                    </div>
+                    <div class="temperatura min">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        <div>
+                            <p>Tem.min</p>
+                            <p>22 <sup>C°</sup></p>
+                        </div>
+                    </div>
+                    <div class="temperatura humidade">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div>
+                            <p>Humidade</p>
+                            <p>72<span>%</span></p>
+                        </div>
+                    </div>
+                    <div class="temperatura humidade">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <p>Vento</p>
+                            <p>2.4<span>km/h</span></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
