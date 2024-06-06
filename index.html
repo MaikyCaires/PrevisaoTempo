@@ -11,16 +11,16 @@
     <div class="container-main">
         <form  class="formulario">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="search" name="cidade" id="cidade" placeholder="Buscar cidade">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input data-input="cidade" type="search" name="cidade" id="cidade" placeholder="Buscar cidade">
+            <button data-btn="buscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div class="dados-tempo">
-            <h1>Cidade, pais</h1>
+            <h1><span data-cidade="value">Cidade</span>, <span data-pais="value">pais</span></h1>
             <div class="tempo">
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                <img data-img="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                 <div class="tempo-dadosAPI">
-                    <p class="temperatura-total">22 <sup>C°</sup></p>
-                    <p class="descricao-temperatura">Nublado</p>
+                    <p class="temperatura-total"><span data-temperatura="total">22</span> <sup>C°</sup></p>
+                    <p class="descricao-temperatura" data-temperatura="descricao">Nublado</p>
                 </div>
             </div>
                 <div class="container-estatisticas">
@@ -28,32 +28,33 @@
                         <i class="fa-solid fa-temperature-arrow-up"></i>
                         <div>
                             <p>Tem.max</p>
-                            <p>22 <sup>C°</sup></p>
+                            <p><span data-temperatura="maxima">22</span><sup>C°</sup></p>
                         </div>
                     </div>
                     <div class="temperatura min">
                         <i class="fa-solid fa-temperature-arrow-down"></i>
                         <div>
                             <p>Tem.min</p>
-                            <p>22 <sup>C°</sup></p>
+                            <p><span data-temperatura="minima">22</span> <sup>C°</sup></p>
                         </div>
                     </div>
                     <div class="temperatura humidade">
                         <i class="fa-solid fa-droplet"></i>
                         <div>
                             <p>Humidade</p>
-                            <p>72<span>%</span></p>
+                            <p><span data-temperatura="humidade">72</span><span>%</span></p>
                         </div>
                     </div>
                     <div class="temperatura humidade">
                         <i class="fa-solid fa-wind"></i>
                         <div>
                             <p>Vento</p>
-                            <p>2.4<span>km/h</span></p>
+                            <p><span data-temperatura="velocidade">2.4</span><span>km/h</span></p>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
 </body>
+<script src="/javaScript.js"></script>
 </html>

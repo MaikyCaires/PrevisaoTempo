@@ -98,6 +98,22 @@ body{
 
 @media only screen and (max-width : 800px){
     .container-main{
-        padding: 50px 30px;
+        padding: 30px 10px;
+    }
+    .tempo{
+        padding: 5px;
+        gap: 15px;
+    }
+    .dados-tempo h1{
+        font-size: 1.5rem;
+    }
+    .temperatura-total{
+        font-size: 2rem;
+    }
+    .descricao-temperatura{
+        font-size: 1rem;
+    }
+    .temperatura{
+        font-size: 1rem;
     }
 }
